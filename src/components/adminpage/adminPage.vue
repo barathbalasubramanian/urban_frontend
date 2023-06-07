@@ -20,13 +20,13 @@ export default {
                 this.cartData = [];
                 if (snapshot.exists()) {
                     this.cartData.push(snapshot.val())
+                    console.log(this.cartData)
                     this.Loading = false
                 } else {
                     console.log("No data available");
                     this.Loading = false
                 }
             })
-            console.log(this.cartData)
         },
 
         prettyDates(dateString) {
@@ -189,15 +189,15 @@ export default {
                                 </div>
                             </div>
 
-                            <div class="address-card">
-                                <h4 class="address-title">
-                                    Ordered Address:
-                                </h4>
-                                <div class="address-line">{{ time.Address.username }}</div>
-                                <div class="address-line">{{ time.Address.address_line_1 }}</div>
-                                <div class="address-line">{{ time.Address.address_line_2 }}</div>
-                            </div>
                         </div>
+                        <!-- <div class="address-card">
+                            <h4 class="address-title">
+                                Ordered Address:
+                            </h4>
+                            <div class="address-line">{{ time.Address.username }}</div>
+                            <div class="address-line">{{ time.Address.address_line_1 }}</div>
+                            <div class="address-line">{{ time.Address.address_line_2 }}</div>
+                        </div> -->
                     </div>
                 </div>
             </div>

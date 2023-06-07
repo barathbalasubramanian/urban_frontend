@@ -24,10 +24,11 @@ export default {
                 const messagesRef = ref(db_rt, 'Booking/' + this.useremail + '/');
                 onValue(messagesRef, snapshot => {
                     this.ordered = [];
+                    console.log('hi')
                     if (snapshot.exists()) {
                         this.ordered.push(snapshot.val())
                         this.Loading = false
-                        console.log(this.ordered)
+                        console.log(this.ordered[0],'oh')
                     } else {
                         console.log("No data available");
                         this.Loading = false
