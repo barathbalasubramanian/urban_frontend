@@ -94,7 +94,7 @@ export default {
         </div>
 
         <div class="cart-view" v-if="!this.Loading">
-            <div v-for="(data1, index) in this.ordered" :key="index">
+            <!-- <div v-for="(data1, index) in this.ordered" :key="index">
                 <div v-for="(data2 , index2) in data1" :key="index2" class="all-carts">
                     <div v-for="(data3 , index3) in data2" :key="index3" class="order-cart">  
                         <div class="date-time">
@@ -127,7 +127,7 @@ export default {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </div>
