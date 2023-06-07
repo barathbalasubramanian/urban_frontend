@@ -98,8 +98,8 @@ export default {
                 <div v-for="(data2 , index2) in data1" :key="index2" class="all-carts">
                     <div v-for="(data3 , index3) in data2" :key="index3" class="order-cart">  
                         <div class="date-time">
-                            <!-- <div class="date">Date : {{ this.prettyDates(index2) }}</div>
-                            <div class="time">Time : {{ this.prettyTimes(index3) }}</div> -->
+                            <div class="date">Date : {{ this.prettyDates(index2) }}</div>
+                            <div class="time">Time : {{ this.prettyTimes(index3) }}</div>
                         </div>
                         <div v-for="(data4 , index4) in data3.services" :key="index4" class="service-cart">
                             <div>
@@ -117,13 +117,12 @@ export default {
                                         <div><pre>Price : {{ data5.rupee }}   </pre></div>
                                         <div><pre>quantity : {{ data5.quantity }}   </pre> </div>
                                         <div><pre>timing : {{ data5.timing }}</pre> </div>
-                                        <!-- <div> {{ statusUpdate(data5.status) }} </div> -->
+                                    </div>  
+                                    <div class="status">
+                                        <div> Status : {{ data5.status }} </div>
                                     </div>  
                             </div>
-                            <div class="status">
-                                <div> Status : {{ this.status }} </div>
-                            </div>  
-                            <!-- <div class="totAmt"> <pre> Total Price : {{ totalbookedamount(data4) }} </pre> </div> -->
+                            <div class="totAmt"> <pre> Total Price : {{ totalbookedamount(data4) }} </pre> </div>
                         </div>
                     </div>
                 </div>
